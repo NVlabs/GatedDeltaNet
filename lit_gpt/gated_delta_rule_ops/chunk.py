@@ -503,7 +503,7 @@ def chunk_fwd_o_fn(q, k, v_new, g, h, BT):
     BK = triton.next_power_of_2(K)
     o = torch.empty_like(v_new)
     BK = min(triton.next_power_of_2(K), 64)
-    BV = min(triton.next_power_of_2(K), 64)
+    BV = min(triton.next_power_of_2(V), 64)
     NV = triton.cdiv(V, BV)
     NT = triton.cdiv(T, BT)
     grid = (NV, NT, B * H)
