@@ -175,7 +175,7 @@ python ../pretrain.py \
 ```
 💡 **Pro Tip**: Add `--interactive_job --debug` for interactive debugging sessions!
 
-Please see this slurm [script](https://github.com/NVlabs/GatedDeltaNet/blob/main/scripts/tsz512x4k_15B_gated_deltanet_h1_0.4B.sh) for training the GatedDeltaNet_H1 model with 0.4B parameters on 15B tokens. The training requires 4 nodes and can be finished in approximately 4 hours. For this run, the validation loss and perplexitty curves (1x & 2x for lengh extrapolation) are expected as follows:
+Please see this slurm [script](https://github.com/NVlabs/GatedDeltaNet/blob/main/scripts/tsz512x4k_15B_gated_deltanet_h1_0.4B.sh) for training the GatedDeltaNet_H1 model with 0.4B parameters on 15B tokens. The training requires 4 nodes and can be finished in approximately 4 hours. For this run, the validation loss and perplexity curves (1x & 2x for length extrapolation) are expected as follows:
 
 ![curves](https://github.com/user-attachments/assets/bd8afd42-6f20-4103-8b31-48516871b681)
 
